@@ -1,0 +1,58 @@
+1. What is Emmet?
+A. Emmet in a text editor 
+   allows to type shortcuts 
+   that are then expanded into full pieces of code.
+
+2. Difference between a Library and a Framework?
+A. i.  Library implements a particular function
+   ii. Framework is a collection of libraries
+       implementing a particular methodology.
+
+3. What is CDN why do we use it?
+A. A content delivery network (CDN) is a geographically distributed group of servers that
+   allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+   CDN:
+   i.   Improves website performance. (website load time)
+   ii.  Reduce bandwidth cost.
+   iii. Increases content availability and redundancy.
+   iv.  Improves website security.
+
+4. Why is React known as React?
+A. React is called React because it reacts to changes in data and updates the user interface accordingly. 
+   It was originally developed by Facebook and 
+   was released as an open-source project in 2013. 
+   The name "React" reflects its purpose of reacting to changes in data and 
+   rendering the appropriate changes in the user interface.
+
+5. What is cross-origin in the script tag?
+A. The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+   A cross-origin request is a request for a resource 
+   (e.g. style sheets, iframes, images, fonts, or scripts) 
+   from another domain. 
+   CORS is used to manage cross-origin requests.
+   CORS stands for Cross-Origin Resource Sharing.
+
+6. What is the difference between React and ReactDOM?
+A. React creates and uses components and elements while
+   ReactDOM package provides DOM-specific methods.
+
+7. What is the difference between react.development.js and react.production.js files via CDN?
+A. react.development.js - More developer friendly, readable, will take more size.
+   react.production.js - Minified code that is not developer friendly as it focused on decreasing in file size, code efficiency.
+
+8. Async and Defer?
+A. Async: 
+    <script src="myfile1.js" async></script>
+    <script src="myfile2.js" async></script>
+    i.   Make par­al­lel requests to fetch the files.
+    ii.  Con­tinue pars­ing the doc­u­ment as if it was never interrupted.
+    iii. Exe­cute the indi­vid­ual scripts the moment the files are downloaded.
+   
+   Defer: 
+    <script src="myfile1.js" defer></script>
+    <script src="myfile2.js" defer></script>
+    i.   Make par­al­lel requests to fetch the indi­vid­ual files.
+    ii.  Con­tinue pars­ing the doc­u­ment as if it was never interrupted.
+    iii. Fin­ish pars­ing the doc­u­ment even if the script files have downloaded.
+    iv.  Exe­cute each script in the order they were encoun­tered in the document.
+        
