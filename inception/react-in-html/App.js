@@ -1,38 +1,55 @@
-/**
- *
- *<div id="parent">
- *   <div id="child">
- *      <h1>I'm h1 tag</h1>
- *      <h2>I'm h2 tag</h2>
- *   </div>
- *   <div id="child2">
- *      <h1>I'm h1 tag</h1>
- *      <h2>I'm h2 tag</h2>
- *   </div>
- *</div>
- *
- * ReactElement(Object) => HTML(Browser Understands)
- */
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+//React.createElement => ReactElement-Js Object => HTMLElement(render)
 
 // const heading = React.createElement(
 //   "h1",
 //   { id: "heading" },
-//   "Hello World from React!"
+//   "Namaste React 🚀"
 // );
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm h1 tag"),
-    React.createElement("h2", {}, "I'm h2 tag"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm h1 tag"),
-    React.createElement("h2", {}, "I'm h2 tag"),
-  ]),
-]);
+// JSX - HTML-like or XML-like syntax
 
-console.log(parent); //object
+// JSX (transpiled before it reaches the JS) - PARCEL - Babel
+
+// JSX => Babel transpiles it to React.createElement => ReactElement-Js Object => HTMLElement(render)
+
+//React Element
+const jsxHeading = (
+  <h1 className="head" tabIndex="5">
+    Namaste React using JSX🚀
+  </h1>
+);
+//console.log(jsxHeading);
+
+//React Components
+//Class Based Components - OLD
+//Function Based Components - NEW
+
+const Title = () => (
+  <h1 className="head" tabIndex="5">
+    Namaste React using JSX🚀
+  </h1>
+);
+
+//React Functional Component
+//Component Composition
+//React Fragments - behaves like an empty tag.  <></> or <React.Fragment></React.Fragment>
+const HeadingComponent = () => (
+  <>
+    <div id="container">
+      {Title()}
+      <Title />
+      <Title></Title>
+      <h1>Namaste React Functional Component</h1>;
+    </div>
+    <div id="container2"></div>
+  </>
+);
+
+// const HeadingComponent2 = () => <h1>Namaste React Functional Component</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<HeadingComponent />);
