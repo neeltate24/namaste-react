@@ -1,0 +1,4 @@
+1. inside package.json there are scripts in that script created script start -> dev and 
+build -> production 
+to run the same npx parcel index.html we can run now npm run start or build.
+2.
