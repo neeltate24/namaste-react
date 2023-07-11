@@ -1,4 +1,4 @@
-{"restaurants": [
+[
   {
     "info": {
       "id": "28569",
@@ -1452,4 +1452,4 @@
       "type": "DEEPLINK"
     }
   }
-]}
+]
