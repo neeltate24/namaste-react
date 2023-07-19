@@ -4,9 +4,15 @@ const RestaurantCard = (props) => {
   //destructuring of objects, instead of using props
   const { resData } = props;
 
-  const { cloudinaryImageId, name, cuisines, costForTwo, avgRating, sla } =
-    resData?.info;
-  console.log(resData);
+  const {
+    cloudinaryImageId,
+    name,
+    cuisines,
+    costForTwoString,
+    avgRating,
+    sla,
+  } = resData?.data?.data;
+  // console.log(resData);
   return (
     <div className="res-card" style={styleCard}>
       <img
@@ -17,7 +23,7 @@ const RestaurantCard = (props) => {
       <h2>{name}</h2>
       {/* When destructured we can use both props.resName or just resName */}
       <h4>{cuisines.join(", ")}</h4>
-      <h4>{costForTwo}</h4>
+      <h4>{costForTwoString}</h4>
       <h4>{avgRating} stars</h4>
       <h4>{sla.deliveryTime} mins</h4>
     </div>

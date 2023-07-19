@@ -20,3 +20,7 @@ React Fiber Architecture Docs.
 React does DOM manipulation efficiently because it has a Virtual DOM
 React can efficiently find out the diffence between Virtual Dom and change/update the UI.This is the core of React Algorithm.
 
+Monolith Architecture
+Microservices 
+Separation of Concerns
+
