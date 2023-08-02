@@ -100,11 +100,23 @@ h2 {
 
 .shimmer-card {
   margin: 30px;
-  width: 220px;
+  width: 210px;
   height: 400px;
   background-color: gray;
 }
 
 .login {
   cursor: pointer;
+}
+
+.user-card {
+  border: 3px solid lightblue;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.user-card1 {
+  border: 3px solid silver;
+  margin-left: 3px;
+  margin-right: 3px;
 }

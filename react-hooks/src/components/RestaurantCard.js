@@ -11,7 +11,7 @@ const RestaurantCard = (props) => {
     costForTwoString,
     avgRating,
     sla,
-  } = resData?.data?.data;
+  } = resData?.info;
   // console.log(resData);
   return (
     <div className="res-card" style={styleCard}>
