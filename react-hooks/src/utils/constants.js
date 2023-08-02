@@ -8,4 +8,7 @@ const styleCard = {
   backgroundColor: "#f0f0f0",
 };
 
-export { CDN_URL, LOGO_URL, styleCard };
+// const MENU_API =
+//   "";
+
+export { CDN_URL, LOGO_URL, styleCard};
